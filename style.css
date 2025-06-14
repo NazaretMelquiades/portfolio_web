@@ -9,3 +9,6 @@
     --caramelo: #e18335;
 }
 
+body {
+    background-color: var(--pera);
+}
