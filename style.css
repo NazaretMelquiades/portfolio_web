@@ -1,7 +1,11 @@
-* {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', 'Arial, ' sans - serif'
+:root {
+    --azul-celestial: #1e91d6;
+    --azul-frances: #0072bb;
+    --verde-jungla: #489e7b;
+    --amarillo-verde: #8fc93a;
+    --pera: #bacb39;
+    --citrino: #e4cc37;
+    --amarillo-hunyadi: #e3a836;
+    --caramelo: #e18335;
 }
 
-body {
-    background-color: blueviolet;
-}
