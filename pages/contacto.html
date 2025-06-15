@@ -26,7 +26,7 @@
         <h2>Rellena los siguientes datos</h2>
 
         <form id="formulario">
-            <label for="fname"></label>
+            <label for="fname">Nombre:</label>
             <input type="text" 
             id="fname" 
             name="fname" 
@@ -35,7 +35,7 @@
             maxlenght="30"
             required="">
 
-            <label for="flastname"></label>
+            <label for="flastname">Apellido:</label>
             <input 
             type="text" 
             id="flastname" 
@@ -45,8 +45,65 @@
             maxlenght="30" 
             required="">
             
+            <label for="email">Email:</label>
+            <input 
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Introduce tu email"
+            minlength="3"
+            maxlength="30"
+            required
+            >
+
+            <label for="telefono">Telefono:</label>
+            <input
+            type="tel"
+            id="telefono"
+            name="telefono"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+            placeholder="introduce tu telefono"
+            required
+            />
+
+
+            <label for="season">¿Que quieres que incluya tu caja?</label>
+            <div>
+                <label for="fruta">
+                <input 
+                type="radio" 
+                id="fruta" 
+                name="fruta" 
+                value="fruta"
+                />fruta</label>
+            
+                <label for="verdura">
+                <input 
+                type="radio" 
+                id="verdura" 
+                name="verdura" 
+                value="verdura" 
+                />verdura</label>
+            
+                <label for="fruver">
+                <input 
+                type="radio" 
+                id="fruver" 
+                name="fruver" 
+                value="frutayverdura" 
+                />Fruta y verdura</label>
+            </div>
+
+            <label for="cuando">¿Cuando quieres recibir tu caja?:</label>
+            <select id="cuando" name="cuando">
+                <option value="semanal">Semanal</option>
+                <option value="mensual">Mensual</option>
+                <option value="trimestral">Trimestral</option>
+            </select>
+            <input type="button" value="Enviar" />
         </form>
     </section>
 
+<!--<footer>Gracias por apoyar al comercio local y a tu agricultor de confianza</footer>-->
 
 </body>
