@@ -9,6 +9,41 @@
     --caramelo: #e18335;
 }
 
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.0rem;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
+    transition: 0.4s ease;
+}
+
+
 body {
     background-color: var(--azul-celestial);
+}
+
+h1 {
+    margin: 22px 5px;
+    padding: 8px 10px;
+}
+
+header {
+    background-color: var(--caramelo);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav>ul>li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 8px;
+}
+
+nav>ul>li>a {
+    color: var(--azul-frances);
+    text-decoration: none;
 }
