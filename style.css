@@ -130,6 +130,7 @@ figure>figcaption {
     justify-content: space-around;
 }
 
+
 #table {
     border: 2px var(--pera) solid;
     border-collapse: collapse;
@@ -145,4 +146,69 @@ td {
 
 td:hover {
     background-color: var(--azul-frances);
+}
+
+#formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"],
+select,
+textarea {
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (min-width: 700px) {
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="submit"],
+    select,
+    textarea {
+        width: 80%;
+        height: 45px;
+    }
+
+    * {
+        font-size: 1.2rem;
+    }
+
+    #main_picture {
+        width: 70%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="submit"],
+    select,
+    textarea {
+        width: 50%;
+    }
+
+    * {
+        font-size: 1.6rem;
+    }
+
+    #main_picture {
+        width: 45%;
+    }
 }
