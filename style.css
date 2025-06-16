@@ -27,6 +27,11 @@ h1 {
     padding: 8px 10px;
 }
 
+h2 {
+    text-align: center;
+    border: 2px dotted var(--citrino);
+}
+
 header {
     background-color: var(--caramelo);
     padding-top: 10px;
@@ -46,4 +51,98 @@ nav>ul>li {
 nav>ul>li>a {
     color: var(--azul-frances);
     text-decoration: none;
+}
+
+.content {
+    margin: 22px 5px;
+    padding: 8px 10px;
+}
+
+.content h2 {
+    margin: 1px auto;
+}
+
+#title {
+    border: 3px double var(--caramelo);
+    text-align: center;
+}
+
+#main_figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#main_img {
+    width: 100%;
+    opacity: 1;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+figure>figcaption {
+    font-size: small;
+    text-align: center;
+}
+
+#titulo_biografia {
+    border: 3px double var(--caramelo);
+    text-align: center;
+}
+
+#biografia_figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#biografia_imagen {
+    width: 100%;
+    opacity: 1;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+#titulo_contacto {
+    border: 3px double var(--caramelo);
+    text-align: center;
+}
+
+#portfolio>article>video {
+    border-radius: 20px;
+    display: block;
+}
+
+#portfolio>article>img {
+    border-radius: 20px;
+    display: block;
+    width: 300px;
+    height: 600px;
+}
+
+#portfolio {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#table {
+    border: 2px var(--pera) solid;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid var(--pera);
+}
+
+td:hover {
+    background-color: var(--azul-frances);
 }
