@@ -11,7 +11,7 @@
 
 * {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.0rem;
+    font-size: 0.85rem;
     scroll-behavior: smooth;
     scroll-margin-top: 100px;
     transition: 0.4s ease;
@@ -69,8 +69,15 @@ nav>ul>li>a {
 
 #main_figure {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: 2rem auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 #main_img {
@@ -78,6 +85,8 @@ nav>ul>li>a {
     opacity: 1;
     border-radius: 10%;
     object-fit: cover;
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
 }
 
 figure>figcaption {
@@ -91,9 +100,9 @@ figure>figcaption {
 }
 
 #biografia_figure {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 500px;
+    margin: 2rem auto;
+    text-align: center;
 }
 
 #biografia_imagen {
@@ -101,6 +110,12 @@ figure>figcaption {
     opacity: 1;
     border-radius: 10%;
     object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 #titulo_contacto {
@@ -108,39 +123,42 @@ figure>figcaption {
     text-align: center;
 }
 
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
 #portfolio>article>video {
-    border-radius: 20px;
-    display: block;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2)
 }
 
 #portfolio>article>img {
-    border-radius: 20px;
-    display: block;
-    width: 300px;
-    height: 600px;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2)
 }
-
-#portfolio {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-around;
-    align-items: center;
-    justify-content: space-around;
-}
-
 
 #table {
-    border: 2px var(--pera) solid;
+    width: 90%;
+    margin: 20px auto;
     border-collapse: collapse;
-    width: 100%;
+    border: 2px solid var(--pera);
+
 }
 
 th,
 td {
     padding: 8px;
-    text-align: left;
+    text-align: center;
     border-bottom: 1px solid var(--pera);
 }
 
@@ -184,7 +202,7 @@ footer {
     }
 
     * {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     #main_picture {
@@ -205,7 +223,7 @@ footer {
     }
 
     * {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
 
     #main_picture {
